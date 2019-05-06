@@ -1,0 +1,15 @@
+<div id="site_search" class="search">
+  <input type="text" id="local-search-input" name="q" results="0" placeholder="search my blog..." class="form-control"/>
+  <div id="local-search-result"></div>
+</div>
+
+<script src="<%- config.root %>js/jquery-3.2.1.min.js"></script>
+<script src="<%- config.root %>js/search.js"></script>
+<script type="text/javascript">      
+    var search_path = "<%= config.search.path %>";
+    if (search_path.length == 0) {
+      search_path = "search.xml";
+    }
+    var path = "<%= config.root %>" + search_path;
+    searchFunc(path, 'local-search-input', 'local-search-result');
+</script>

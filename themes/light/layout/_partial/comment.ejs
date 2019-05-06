@@ -1,0 +1,6 @@
+<% if (page.comments){ %>
+    <section id="comment">
+        <h1 class="title"><%= __('comment') %></h1>
+        <div class="ds-thread" data-thread-key="<%- item.path %>"></div>
+    </section>
+<% } %>

@@ -1,0 +1,239 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+		<meta name="renderer" content="webkit">
+		<title>LiuShuaiCai's Blog</title>
+		<link rel="stylesheet" href="<%- config.root %>css/about-me.css" media="screen" type="text/css">
+		<link rel="stylesheet" href="<%- config.root %>css/normalize.min.css" media="screen" type="text/css">
+		<link rel="stylesheet" href="<%- config.root %>css/skill.css" media="screen" type="text/css">
+		
+		<!--[if lte IE 8]>
+		<style type="text/css">
+			html,body{width:100%; height:100%; overflow:scroll}
+			.section-btn{display:none;}
+		</style>
+		<![endif]-->
+	</head>
+	<body>
+		<div id='me-header'>
+			<ul>
+				<li><a href='/'>Home</a></li>
+				<li><a href='/about-me'>About</a></li>
+			</ul>
+		</div>
+		<section class="section-wrap">
+			<div class="section section-1">
+				<div class="title active">
+					<p class="tit">About Me</p>
+				</div>
+				<div class='content'>
+					<div>
+						<svg id="logo" class="line-drawing" width="84" height="84" xmlns="http://www.w3.org/2000/svg">
+							<circle class='path' cx="42" cy="42" r="41" stroke="#fff" stroke-width="1.5" fill=none />
+						</svg>
+					</div>
+					<div>
+						<svg width="150" height="60" xmlns="http://www.w3.org/2000/svg">
+						  <path class='path' id='name' d="M0,50 L150,50" style="stroke:#FFF; fill:none;"/> 
+						  <text y='10' text-anchor="middle" startOffset='50%' style="fill:#fff;"  x="50%" >
+						  		<textPath  xlink:href="#name">刘帅才</textPath>
+						  </text>
+						</svg> 
+					</div>
+					<div>
+						<svg width="150" height="55" xmlns="http://www.w3.org/2000/svg">
+						  <path class='path' id='home' d="M0,50 L150,50" style="stroke:#FFF; fill:none;"/> 
+						  <text y='10' text-anchor="middle" style="fill:#fff;"  x="50%" >
+						  		 <textPath xlink:href="#home">92-河南</textPath>
+						  </text>
+						</svg> 
+					</div>
+					<div>
+						<svg width="150" height="55" xmlns="http://www.w3.org/2000/svg">
+						  <path class='path' id='college' d="M0,50 L150,50" style="stroke:#FFF; fill:none;"/> 
+						  <text y='10' text-anchor="middle" style="fill:#fff;"  x="50%" >
+						  		 <textPath xlink:href="#college">毕业于郑州大学</textPath>
+						  </text>
+						</svg> 
+					</div>
+					<div id='linkme'>
+						<svg width="150px" xmlns="http://www.w3.org/2000/svg">
+							<a xlink:href="https://github.com/LiuShuaiaCai" target="new">
+								<circle class='path' cx='20' fill=none />
+								<image class='linkme' x="10" y="10" width='20' height='20' xlink:href="/fancybox/github.png"></image>
+							</a>
+							<a xlink:href="http://weibo.com/u/6095728546?is_hot=1" target="new">
+								<defs>
+								    <pattern class='linkme' id="weibo" x="50" y="0" patternUnits="userSpaceOnUse" height="40" width="80">
+								     <image x="10" y="50" width='20' height='20' xlink:href="/fancybox/weibo.png"></image>
+								    </pattern>
+								 </defs>
+								<circle class='path' cx='70' fill=none />
+								<image class='linkme' x="60" y="10" width='20' height='20' xlink:href="/fancybox/weibo.png"></image>
+							</a>
+							<a xlink:href="http://www.lfsblack.com/liushuaicaiblog/" target="new">
+								<circle class='path' cx='120' fill=none />
+								<text class='linkme' x="108" y='25' style="fill:#fff;" >me</text>
+							</a>
+						</svg> 
+  
+					</div>
+				</div>
+			</div>
+			<div class="section section-2">
+				<div class="title">
+					<p class="tit">我的工作</p>
+				</div>
+				<div class='content'>
+					<svg width='100%' height='400' xmlns="http://www.w3.org/2000/svg" version="1.1">
+					  <path d="M800 0 L800 400 Z" style='stroke:#fff;fill:none' />
+					  <path id='now' d="M600 100 L1200 100 Z" style='stroke:#fff;fill:none' />
+					  <text y='200' text-anchor="middle" style="fill:#fff;"  x="88" >
+					  	<textPath xlink:href='#now'>2016/04 - 至今</textPath>
+					  </text>
+					  <text y='200' text-anchor="right" style="fill:#fff;"  x="260" >
+					  	<textPath text-anchor="right" xlink:href='#now'>PHP开发工程师（北京恩基创想 ）</textPath>
+					  </text>
+					 <path id='2015' d="M600 300 L1200 300 Z" style='stroke:#fff;fill:none' />
+					  <text y='300' text-anchor="middle" style="fill:#fff;"  x="88" >
+					  	<textPath xlink:href='#2015'>2015/10 - 2016/03</textPath>
+					  </text>
+					  <text y='300' text-anchor="right" style="fill:#fff;"  x="260" >
+					  	<textPath xlink:href='#2015'>WEB前端工程师（郑州瑞思实习 ）</textPath>
+					  </text>
+					</svg>
+					<div>虽已毕业，从未懈怠，唯有努力，方成大业</div>
+				</div>
+			</div>
+			<div class="section section-3">
+				<div class="title">
+					<p class="tit">热衷于新技术</p>
+				</div>
+				<div class='content'>
+					<%- partial('_partial/skill') %>
+				</div>
+			</div>
+			<%/*
+			<div class="section section-4">
+				<div class="title">
+					<p class="tit">我敬佩的人</p>
+				</div>
+			</div>
+			*/%>
+			<div class="section section-5">
+				<div class="title">
+					<p class="tit">我的生活</p>
+					<p class="tit">就像这黑夜中的烟火</p>
+					<p class="tit">缤纷多彩</p>
+				</div>
+				<div class='content'>
+					<ul>
+						<li>
+							<div>
+								<svg id="demo-link-1" class="line-drawing" xmlns="http://www.w3.org/2000/svg">
+									<path class="darker path" d="m 7.5228307,2.6236947 67.7360843,0 c 2.782649,0 5.022831,2.23 5.022831,5 l 0,24.6482333 c 0,2.77 -2.240182,5 -5.022831,5 l -67.7360843,0 c -2.7826481,0 -5.0228307,-2.23 -5.0228307,-5 l 0,-24.6482333 c 0,-2.77 2.2401826,-5 5.0228307,-5 z" />
+								</svg>
+								<div data-svg="demo-link-1" class="hide" href="javascript:;">骑行</div>
+							</div>
+							<%/*
+							<div>
+								<svg width='212px' height='312px' id="demo-link-5" class="line-drawing" xmlns="http://www.w3.org/2000/svg">
+									<path class="darker path" d="m 5.5228307,0.6236947 190.7360843,0 
+									c 2.782649,0 5.022831,2.23 5.022831,5 l 0,290.6482333 
+									c 0,2.77 -2.240182,5 -5.022831,5 l -190.7360843,0 
+									c -2.7826481,0 -5.0228307,-2.23 -5.0228307,-5 l 0,-290.6482333 
+									c 0,-2.77 2.2401826,-5 5.0228307,-5 
+									z" />
+								</svg>
+							</div>
+							*/%>
+						</li>
+						<li>
+							<div>
+								<svg id="demo-link-2" class="line-drawing" xmlns="http://www.w3.org/2000/svg">
+									<path class="darker path" d="m 7.5228307,2.6236947 67.7360843,0 c 2.782649,0 5.022831,2.23 5.022831,5 l 0,24.6482333 c 0,2.77 -2.240182,5 -5.022831,5 l -67.7360843,0 c -2.7826481,0 -5.0228307,-2.23 -5.0228307,-5 l 0,-24.6482333 c 0,-2.77 2.2401826,-5 5.0228307,-5 z" />
+								</svg>
+								<div data-svg="demo-link-1" class="hide" href="javascript:;">打球</div>
+							</div>
+							<%/*
+							<div>
+								<svg width='212px' height='312px' id="demo-link-5" class="line-drawing" xmlns="http://www.w3.org/2000/svg">
+									<path class="darker path" d="m 5.5228307,0.6236947 190.7360843,0 
+									c 2.782649,0 5.022831,2.23 5.022831,5 l 0,290.6482333 
+									c 0,2.77 -2.240182,5 -5.022831,5 l -190.7360843,0 
+									c -2.7826481,0 -5.0228307,-2.23 -5.0228307,-5 l 0,-290.6482333 
+									c 0,-2.77 2.2401826,-5 5.0228307,-5 
+									z" />
+								</svg>
+							</div>
+							*/%>
+						</li>
+						<li>
+							<div>
+								<svg id="demo-link-3" class="line-drawing" xmlns="http://www.w3.org/2000/svg">
+									<path class="darker path" d="m 7.5228307,2.6236947 67.7360843,0 c 2.782649,0 5.022831,2.23 5.022831,5 l 0,24.6482333 c 0,2.77 -2.240182,5 -5.022831,5 l -67.7360843,0 c -2.7826481,0 -5.0228307,-2.23 -5.0228307,-5 l 0,-24.6482333 c 0,-2.77 2.2401826,-5 5.0228307,-5 z" />
+								</svg>
+								<div data-svg="demo-link-1" class="hide" href="javascript:;">旅行</div>
+							</div>
+							<%/*
+							<div>
+								<svg width='212px' height='312px' id="demo-link-5" class="line-drawing" xmlns="http://www.w3.org/2000/svg">
+									<path class="darker path" d="m 5.5228307,0.6236947 190.7360843,0 
+									c 2.782649,0 5.022831,2.23 5.022831,5 l 0,290.6482333 
+									c 0,2.77 -2.240182,5 -5.022831,5 l -190.7360843,0 
+									c -2.7826481,0 -5.0228307,-2.23 -5.0228307,-5 l 0,-290.6482333 
+									c 0,-2.77 2.2401826,-5 5.0228307,-5 
+									z" />
+								</svg>
+							</div>
+							*/%>
+						</li>
+						<li>
+							<div>
+								<svg id="demo-link-4" class="line-drawing" xmlns="http://www.w3.org/2000/svg">
+									<path class="darker path" d="m 7.5228307,2.6236947 67.7360843,0 c 2.782649,0 5.022831,2.23 5.022831,5 l 0,24.6482333 c 0,2.77 -2.240182,5 -5.022831,5 l -67.7360843,0 c -2.7826481,0 -5.0228307,-2.23 -5.0228307,-5 l 0,-24.6482333 c 0,-2.77 2.2401826,-5 5.0228307,-5 z" />
+								</svg>
+								<div data-svg="demo-link-1" class="hide" href="javascript:;">敲代码</div>
+							</div>
+							<%/*
+							<div>
+								<svg width='212px' height='312px' id="demo-link-5" class="line-drawing" xmlns="http://www.w3.org/2000/svg">
+									<path class="darker path" d="m 5.5228307,0.6236947 190.7360843,0 
+									c 2.782649,0 5.022831,2.23 5.022831,5 l 0,290.6482333 
+									c 0,2.77 -2.240182,5 -5.022831,5 l -190.7360843,0 
+									c -2.7826481,0 -5.0228307,-2.23 -5.0228307,-5 l 0,-290.6482333 
+									c 0,-2.77 2.2401826,-5 5.0228307,-5 
+									z" />
+								</svg>
+							</div>
+							*/%> 
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="section section-4">
+				<div class="title">
+					<p class="tit">最新信息</p>
+				</div>
+				<div class='content'>
+					<div style="color: #fff">最近在看新的工作机会，如果有机会，可以联系我。电话：15201557941，邮箱：1252578541@qq.com</div>
+					<div style="margin-top: 88px;float: right;margin-right: 25%;border: 1px solid #fff;width: 100px;height: 50px;line-height: 50px"><a target="_blank" style="display: block;" href="http://onx0p7mg5.bkt.clouddn.com/%E5%88%98%E5%B8%85%E6%89%8D%20PHP%20%E9%83%91%E5%B7%9E%E5%A4%A7%E5%AD%A6%20.pdf">下载简历</a></div>
+				</div>
+			</div>
+		</section>
+		<ul class="section-btn">
+		  <li class="on"></li>
+		  <li></li>
+		  <li></li>
+		  <li></li>
+		  <li></li>
+		</ul>
+		<div class="arrow">&laquo;</div>
+	<script src="http://www.jq22.com/jquery/2.1.1/jquery.min.js"></script>
+	<script src="<%- config.root %>js/jquery.fireworks.js"></script>
+	<script src="<%- config.root %>js/classie.js"></script>
+	<script src="<%- config.root %>js/about-me.js"></script>
+	</body>
+</html>

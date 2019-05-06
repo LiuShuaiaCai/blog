@@ -1,0 +1,11 @@
+<div id='index-continer' class='hidden_show'>
+	<div id='index_main' class='hidden_show'>
+		<% page.posts.each(function(item){ %>
+			<%- partial('_partial/article', {item: item, index: true}) %>
+		<% }); %>
+	</div>
+	<%- partial('_partial/pagination') %>
+</div>
+
+<%- partial('_partial/sidebar', {index: true},{cache: true}) %>
+

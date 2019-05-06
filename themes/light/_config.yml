@@ -1,0 +1,44 @@
+menu:
+  首页:
+  Laravel: laravel
+  归档: archives
+  我: about
+
+  # RSS: atom.xml
+
+widgets:
+- search
+- category
+- tag
+
+excerpt_link: 查看全文
+
+twitter:
+  username:
+  show_replies: false
+  tweet_count: 5
+
+addthis:
+  enable: true
+  pubid:
+  facebook: true
+  twitter: true
+  google: true
+  pinterest: true
+
+fancybox: true
+
+google_analytics:
+# rss:
+
+comment_provider: 
+# Facebook comment
+facebook:
+  appid: 123456789012345
+  comment_count: 5
+  comment_width: 840
+  comment_colorscheme: light
+
+# MathJax Support
+mathjax:
+  enable: true
