@@ -26,3 +26,4 @@ bind 与 singleton 的区别
 利用 docker-compose 搭建了一个简单的Web环境，在Laravel中测试的时候，遇到了一些问题，简单的做下总结。
 
 ## [Laravel 中使用 RabbitMQ](/laravel/laravel-rabbitmq.html)
+为了自己之后使用方便，对在 Laravel 中使用 RabbitMQ 做了简单的总结。

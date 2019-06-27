@@ -234,3 +234,6 @@ class RabbitMqController extends Controller
 数据库添加了一条：
 
     2	2	2	sweet				liusweet521!		2019-06-27 05:15:55	2019-06-27 05:15:55	
+
+## 官方文档：
+github地址：[https://github.com/vyuldashev/laravel-queue-rabbitmq](https://github.com/vyuldashev/laravel-queue-rabbitmq)
