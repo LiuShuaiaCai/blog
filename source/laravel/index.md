@@ -27,3 +27,5 @@ bind 与 singleton 的区别
 
 ## [Laravel 中使用 RabbitMQ](/laravel/laravel-rabbitmq.html)
 为了自己之后使用方便，对在 Laravel 中使用 RabbitMQ 做了简单的总结。
+
+## [Artisan命令大全](/laravel/laravel-artisan.html)
