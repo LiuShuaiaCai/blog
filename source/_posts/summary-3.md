@@ -8,7 +8,7 @@ tags: ['ajax分页','多文件上传']
 ## 1、Ajax分页
 企业购的后台模板管理、楼层管理中用到的ajax分页（商品的选择、搜索），自己写了一下，还不是很完整，先记录一下（注：下面的数据都是修改过的，不会对我们的网站产生任何影响）。
 <!-- more -->
-#### 1.1、htnl代码
+#### 1.1、html代码
 ```html
 <!--data的值要和input的name相同-->
 <div class="editbrand floor" data="brand_sn" style="height: 535px;">
